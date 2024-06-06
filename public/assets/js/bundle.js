@@ -1,2 +1,2 @@
-console.log(0x3dadd6acaf11c800);
+(()=>{"use strict";console.log("everton"),console.log(20)})();
 //# sourceMappingURL=bundle.js.map

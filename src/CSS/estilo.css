@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    /* Criando variável */
+    --MinhaVariavel: #086575; 
+    --MinhaVariavel-1: #032025;
+    --MinhaVariavel-2: #FF4858;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--MinhaVariavel); 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    /* Use ponto (.) para classes e use (#) para IDs */
+    max-width: 640px;
+    margin: 50px auto;
+    /* Auto vai centralizar */
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+    /* para todo input, label e button dentro de form */
+    display: block;
+    /* o formulario ficou um em baixo do outro */
+    width: 100%;
+    margin-bottom: 10px;
+    /* vai ficar um espaço em BAIXO em cada input e button */
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus { /* quando o input for selecionado --> focus significa selecionar/clickar em algo */
+    outline: 1px solid var(--MinhaVariavel); /* vai alterar a cor do input quando ele for selecionado*/
+}
+
+form button{
+    border: none;
+    background: var(--MinhaVariavel);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer; /* vai aparecer uma mão quando o mouse estiver sobre o button */
+    margin-top: 30px;
+}
+
+form button:hover{ /* quando eu passar o mouse por cima do button --> hover significa quando eu passar o mouse por cima */
+    background: var(--MinhaVariavel-1); /* vai alterar a cor quando eu passar o mouse */
+}
+
+form button:active{ /* quando eu clickar no button --> active significa quando eu clickcar */
+    background: var(--MinhaVariavel-2); /* vai alterar a cor quando eu clickar */
+
+}
+
+.paragrafo-resultado {
+    background-color: greenyellow;
+    padding: 10px 20px;
+}
+
+.deuruim{
+    background-color: blueviolet;
+    padding: 10px 20px;
+}
+
+.calculadora {
+    width: 400px;
+}
+.display {
+    font-size: 2.2em;
+    width: 100%;
+    border: 1.5px rgb(119, 119, 119) solid;
+    border-radius: 4px;
+    text-align: right;
+    height: 60px;
+    padding: 0 2px;
+}
+.btn {
+    width: 100%;
+    font-size: 1em;
+    height: 50px;
+    background-color: rgb(212, 226, 231);
+    border: 1px solid rgb(163, 165, 167);
+    border-radius: 1px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(201, 215, 223);
+}
